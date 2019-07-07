@@ -37,3 +37,20 @@ struct AddCart : Codable{
     var deleted_at : String?
     
 }
+
+struct addTowishlist : Codable {
+    var code : Int?
+    var msg : String?
+    var data : wishlistReturn?
+}
+
+struct wishlistReturn: Codable {
+    var id : Int?
+    var user_id : Int?
+    var updated_at : String?
+    var created_at : String?
+    var deleted_at : String?
+    
+    
+    
+}

@@ -77,4 +77,32 @@ class API{
         }
         
     }
+    
+    
+    
+    class func AddToWishlist(ItemId : Int , lan : String , token :String,complation : @escaping (_ status : Bool, _ msg : String?, _ dataReturn : wishlistReturn?)->Void){
+        
+        let Url = "http://www.elwalima.com/elwalima_beta/api/addtowishlist?item_id=\(ItemId)&token=\(token)&lang=\(lan)"
+        
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+            do{
+                
+                let result = try JSONDecoder().decode(addTowishlist.self, from: respond.data!)
+                
+                let datares = result.data
+                if let msg = result.msg {
+                    complation(true,msg, datares)
+                }else{
+                    complation(false,nil,nil)
+                }
+                
+            }
+            catch{
+                print(error.localizedDescription)
+                complation(false,nil,nil)
+            }
+        }
+        
+    }
 }

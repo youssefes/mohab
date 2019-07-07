@@ -18,6 +18,8 @@ class getDetailsByItemIdVC: UIViewController {
     var restName = "cusine name"
     var revirew = 3
     
+    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly93d3cuZWx3YWxpbWEuY29tL2Vsd2FsaW1hX2JldGEvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNTYyNTA2NjU2LCJleHAiOjM2MDAwMDAwMDE1NjI1MDY2NTYsIm5iZiI6MTU2MjUwNjY1NiwianRpIjoiakdKUGhiUUJUQlJNbk1jMyJ9.jzo1OhFXfrWLdiq6Bbo2XIzT-6FCvMEXEciJx_gP_gI"
+    
     func cosmonView (retaing : Double ) -> CosmosView {
         var cosmosView : CosmosView{
             let view = CosmosView()
@@ -101,8 +103,6 @@ class getDetailsByItemIdVC: UIViewController {
     }
     
     @IBAction func addToCard(_ sender: Any) {
-        
-    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly93d3cuZWx3YWxpbWEuY29tL2Vsd2FsaW1hX2JldGEvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNTYyNTA2NjU2LCJleHAiOjM2MDAwMDAwMDE1NjI1MDY2NTYsIm5iZiI6MTU2MjUwNjY1NiwianRpIjoiakdKUGhiUUJUQlJNbk1jMyJ9.jzo1OhFXfrWLdiq6Bbo2XIzT-6FCvMEXEciJx_gP_gI"
         API.addToCart(ItemId: 1, lan: "en", token: token, size: 1, quantity: 43) { (status, msg, returnData) in
             if status{
                 if let massage = msg{
@@ -121,12 +121,22 @@ class getDetailsByItemIdVC: UIViewController {
     }
     
     @IBAction func wishlistBtn(_ sender: Any) {
+        API.AddToWishlist(ItemId: 20, lan: "en", token: token) { (status, msg, wishlistReturndata) in
+            if status{
+                if let message = msg{
+                    print(message)
+                    if let data = wishlistReturndata{
+                        print(data)
+                    }
+                }
+            }
+        }
     }
     
     
     func getDetails(){
     
-        API.getDetailsByItemId(item_id: 1, len: "ar") { (status, msg, datareturn) in
+        API.getDetailsByItemId(item_id: 2, len: "ar") { (status, msg, datareturn) in
             if status{
                 if let alldata = datareturn{
                     self.data = alldata
