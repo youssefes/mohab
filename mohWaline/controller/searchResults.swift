@@ -13,7 +13,7 @@ import Kingfisher
 
 class searchResults: UIViewController {
     
-    fileprivate func cosmonView (retaing : Double ) -> CosmosView {
+    func cosmonView (retaing : Double ) -> CosmosView {
         var cosmosView : CosmosView{
             let view = CosmosView()
             view.settings.updateOnTouch = false
@@ -33,17 +33,8 @@ class searchResults: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func verifyUrl (urlString: String?) -> Bool {
-        //Check for nil
-        if let urlString = urlString {
-            // create NSURL instance
-            if let url = NSURL(string: urlString) {
-                // check if your application can open the NSURL instance
-                return UIApplication.shared.canOpenURL(url as URL)
-            }
-        }
-        return false
-    }
+    
+    
 
 }
 extension searchResults : UITableViewDataSource{
@@ -74,7 +65,7 @@ extension searchResults : UITableViewDataSource{
             if foodTypt?.count == 0{
                 cell.lblFoodType.text = "Egyption"
             }else{
-                cell.lblFoodType.text = foodTypt?.joined(separator: "&")
+                cell.lblFoodType.text = foodTypt?.joined(separator: " | ")
             }
             
             

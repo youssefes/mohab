@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675364AA22D22FE400F3E403 /* AddToCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675364A922D22FE300F3E403 /* AddToCartModel.swift */; };
+		67611CC122D20374006D3C74 /* extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67611CC022D20374006D3C74 /* extention.swift */; };
 		67B5E15322D17435000E939D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E15222D17435000E939D /* AppDelegate.swift */; };
 		67B5E15522D17435000E939D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E15422D17435000E939D /* ViewController.swift */; };
 		67B5E15822D17435000E939D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B5E15622D17435000E939D /* Main.storyboard */; };
 		67B5E15A22D17438000E939D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B5E15922D17438000E939D /* Assets.xcassets */; };
 		67B5E15D22D17438000E939D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B5E15B22D17438000E939D /* LaunchScreen.storyboard */; };
+		67B5E17022D174D7000E939D /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16522D174D6000E939D /* APIFunctions.swift */; };
+		67B5E17122D174D7000E939D /* resultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16722D174D7000E939D /* resultCell.swift */; };
+		67B5E17222D174D7000E939D /* sliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16822D174D7000E939D /* sliderCell.swift */; };
+		67B5E17322D174D7000E939D /* getDetailesByItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16A22D174D7000E939D /* getDetailesByItemId.swift */; };
+		67B5E17422D174D7000E939D /* resulteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16B22D174D7000E939D /* resulteModel.swift */; };
+		67B5E17522D174D7000E939D /* getDetailsByItemIdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16D22D174D7000E939D /* getDetailsByItemIdVC.swift */; };
+		67B5E17622D174D7000E939D /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16E22D174D7000E939D /* search.swift */; };
+		67B5E17722D174D7000E939D /* searchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16F22D174D7000E939D /* searchResults.swift */; };
+		B6CD891D1D3BDE6EC52BAE8D /* Pods_mohWaline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC67D1005F942BF93C80AB /* Pods_mohWaline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13CC67D1005F942BF93C80AB /* Pods_mohWaline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mohWaline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD92A824D410F350C3E3074 /* Pods-mohWaline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mohWaline.release.xcconfig"; path = "Target Support Files/Pods-mohWaline/Pods-mohWaline.release.xcconfig"; sourceTree = "<group>"; };
+		675364A922D22FE300F3E403 /* AddToCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartModel.swift; sourceTree = "<group>"; };
+		67611CC022D20374006D3C74 /* extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention.swift; sourceTree = "<group>"; };
 		67B5E14F22D17435000E939D /* mohWaline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mohWaline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B5E15222D17435000E939D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67B5E15422D17435000E939D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,15 @@
 		67B5E15922D17438000E939D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B5E15C22D17438000E939D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67B5E15E22D17438000E939D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B5E16522D174D6000E939D /* APIFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
+		67B5E16722D174D7000E939D /* resultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultCell.swift; sourceTree = "<group>"; };
+		67B5E16822D174D7000E939D /* sliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderCell.swift; sourceTree = "<group>"; };
+		67B5E16A22D174D7000E939D /* getDetailesByItemId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDetailesByItemId.swift; sourceTree = "<group>"; };
+		67B5E16B22D174D7000E939D /* resulteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resulteModel.swift; sourceTree = "<group>"; };
+		67B5E16D22D174D7000E939D /* getDetailsByItemIdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDetailsByItemIdVC.swift; sourceTree = "<group>"; };
+		67B5E16E22D174D7000E939D /* search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
+		67B5E16F22D174D7000E939D /* searchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchResults.swift; sourceTree = "<group>"; };
+		F713844CB0C127F775BAE4B6 /* Pods-mohWaline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mohWaline.debug.xcconfig"; path = "Target Support Files/Pods-mohWaline/Pods-mohWaline.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CD891D1D3BDE6EC52BAE8D /* Pods_mohWaline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,8 @@
 			children = (
 				67B5E15122D17435000E939D /* mohWaline */,
 				67B5E15022D17435000E939D /* Products */,
+				E5BAE020CC039C4A0DF36AED /* Pods */,
+				EE2CD2F07535F38EE77445E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +81,10 @@
 		67B5E15122D17435000E939D /* mohWaline */ = {
 			isa = PBXGroup;
 			children = (
+				67B5E16C22D174D7000E939D /* controller */,
+				67B5E16922D174D7000E939D /* models */,
+				67B5E16422D174D6000E939D /* supportFiles */,
+				67B5E16622D174D7000E939D /* View */,
 				67B5E15222D17435000E939D /* AppDelegate.swift */,
 				67B5E15422D17435000E939D /* ViewController.swift */,
 				67B5E15622D17435000E939D /* Main.storyboard */,
@@ -64,6 +95,61 @@
 			path = mohWaline;
 			sourceTree = "<group>";
 		};
+		67B5E16422D174D6000E939D /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				67B5E16522D174D6000E939D /* APIFunctions.swift */,
+				67611CC022D20374006D3C74 /* extention.swift */,
+			);
+			path = supportFiles;
+			sourceTree = "<group>";
+		};
+		67B5E16622D174D7000E939D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67B5E16722D174D7000E939D /* resultCell.swift */,
+				67B5E16822D174D7000E939D /* sliderCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B5E16922D174D7000E939D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				67B5E16A22D174D7000E939D /* getDetailesByItemId.swift */,
+				67B5E16B22D174D7000E939D /* resulteModel.swift */,
+				675364A922D22FE300F3E403 /* AddToCartModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		67B5E16C22D174D7000E939D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B5E16D22D174D7000E939D /* getDetailsByItemIdVC.swift */,
+				67B5E16E22D174D7000E939D /* search.swift */,
+				67B5E16F22D174D7000E939D /* searchResults.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E5BAE020CC039C4A0DF36AED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F713844CB0C127F775BAE4B6 /* Pods-mohWaline.debug.xcconfig */,
+				1FD92A824D410F350C3E3074 /* Pods-mohWaline.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE2CD2F07535F38EE77445E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13CC67D1005F942BF93C80AB /* Pods_mohWaline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67B5E16122D17438000E939D /* Build configuration list for PBXNativeTarget "mohWaline" */;
 			buildPhases = (
+				63065324277E8F263BF7CFCA /* [CP] Check Pods Manifest.lock */,
 				67B5E14B22D17435000E939D /* Sources */,
 				67B5E14C22D17435000E939D /* Frameworks */,
 				67B5E14D22D17435000E939D /* Resources */,
+				42D40A6AAB97A0B30E3A6C2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +218,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42D40A6AAB97A0B30E3A6C2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mohWaline/Pods-mohWaline-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mohWaline/Pods-mohWaline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63065324277E8F263BF7CFCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mohWaline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67B5E14B22D17435000E939D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67B5E15522D17435000E939D /* ViewController.swift in Sources */,
+				67611CC122D20374006D3C74 /* extention.swift in Sources */,
+				67B5E17222D174D7000E939D /* sliderCell.swift in Sources */,
+				67B5E17722D174D7000E939D /* searchResults.swift in Sources */,
+				67B5E17422D174D7000E939D /* resulteModel.swift in Sources */,
+				67B5E17522D174D7000E939D /* getDetailsByItemIdVC.swift in Sources */,
+				67B5E17322D174D7000E939D /* getDetailesByItemId.swift in Sources */,
+				67B5E17022D174D7000E939D /* APIFunctions.swift in Sources */,
+				67B5E17622D174D7000E939D /* search.swift in Sources */,
+				67B5E17122D174D7000E939D /* resultCell.swift in Sources */,
+				675364AA22D22FE400F3E403 /* AddToCartModel.swift in Sources */,
 				67B5E15322D17435000E939D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +433,7 @@
 		};
 		67B5E16222D17438000E939D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F713844CB0C127F775BAE4B6 /* Pods-mohWaline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +451,7 @@
 		};
 		67B5E16322D17438000E939D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD92A824D410F350C3E3074 /* Pods-mohWaline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

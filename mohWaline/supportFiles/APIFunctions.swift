@@ -18,8 +18,9 @@ class API{
         Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
             do{
                 let result = try JSONDecoder().decode(results.self, from: respond.data!)
-                print(result)
+               
                 let datares = result.data
+                print(datares)
                 complation(true,result.msg,datares)
             }
             catch{
@@ -38,7 +39,7 @@ class API{
         Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
             do{
                 let result = try JSONDecoder().decode(getDetailsByItem.self, from: respond.data!)
-                print(result)
+               
                 let datares = result.data
                 
                 complation(true,result.msg,datares)
@@ -48,5 +49,32 @@ class API{
                 complation(false,nil,nil)
             }
         }
+    }
+    
+    
+    class func addToCart(ItemId : Int , lan : String , token :String, size : Int, quantity: Int, complation : @escaping (_ status : Bool, _ msg : String?, _ dataReturn : AddCart?)->Void){
+        
+        let Url = "http://www.elwalima.com/elwalima_beta/api/addtocart?token=\(token)&item_id=\(ItemId)&quantity=\(quantity)&size=\(size)&lang=\(lan)"
+        
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+            do{
+                
+                let result = try JSONDecoder().decode(addtoCart.self, from: respond.data!)
+                
+                let datares = result.data
+                if let msg = result.msg {
+                   complation(true,msg, datares)
+                }else{
+                    complation(false,nil,nil)
+                }
+                
+            }
+            catch{
+                print(error.localizedDescription)
+                complation(false,nil,nil)
+            }
+        }
+        
     }
 }
