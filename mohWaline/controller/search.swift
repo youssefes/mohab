@@ -18,7 +18,7 @@ class search: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate
     @IBOutlet weak var pickernumberOfGest: UIPickerView!
     @IBOutlet weak var dayNumber: UILabel!
     var allOffersData = [offerData]()
-    var numberOfGuest = [50,100,150,200,250,300,350,400,450,500,600,650,700,800,900,100]
+    var numberOfGuest = [0,50,100,150,200,250,300,350,400,450,500,600,650,700,800,900,100]
     var numberOfGuests : Int = 0
     
     @IBOutlet weak var myOrderBtn: UIButton!
