@@ -8,7 +8,7 @@
 import  UIKit
 import Foundation
 
-
+var NumberOfGestForBooking = 0
 extension UIView{
     @IBInspectable var borderwidth : CGFloat {
         
@@ -55,5 +55,18 @@ extension UIView{
         }
         
     }
+    
+    
+    func applyShadow() {
+        self.layer.shadowOpacity = 0.7
+        self.layer.cornerRadius = 25.0
+        self.layer.shadowRadius = 4.0
+        self.layer.shadowOffset = CGSize(width: 1, height: 4)
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.50).cgColor
+        self.clipsToBounds = false
+    }
 
 }
+
+
+

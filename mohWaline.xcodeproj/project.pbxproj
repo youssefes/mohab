@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		675364AA22D22FE400F3E403 /* AddToCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675364A922D22FE300F3E403 /* AddToCartModel.swift */; };
 		67611CC122D20374006D3C74 /* extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67611CC022D20374006D3C74 /* extention.swift */; };
+		67662B6122D3827000775399 /* OffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67662B6022D3827000775399 /* OffersCell.swift */; };
+		677EA60D22D3CFCF008E9C8C /* offerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677EA60C22D3CFCF008E9C8C /* offerModel.swift */; };
 		67B5E15322D17435000E939D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E15222D17435000E939D /* AppDelegate.swift */; };
 		67B5E15522D17435000E939D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E15422D17435000E939D /* ViewController.swift */; };
 		67B5E15822D17435000E939D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B5E15622D17435000E939D /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		1FD92A824D410F350C3E3074 /* Pods-mohWaline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mohWaline.release.xcconfig"; path = "Target Support Files/Pods-mohWaline/Pods-mohWaline.release.xcconfig"; sourceTree = "<group>"; };
 		675364A922D22FE300F3E403 /* AddToCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartModel.swift; sourceTree = "<group>"; };
 		67611CC022D20374006D3C74 /* extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention.swift; sourceTree = "<group>"; };
+		67662B6022D3827000775399 /* OffersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCell.swift; sourceTree = "<group>"; };
+		677EA60C22D3CFCF008E9C8C /* offerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerModel.swift; sourceTree = "<group>"; };
 		67B5E14F22D17435000E939D /* mohWaline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mohWaline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B5E15222D17435000E939D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67B5E15422D17435000E939D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				67B5E16722D174D7000E939D /* resultCell.swift */,
 				67B5E16822D174D7000E939D /* sliderCell.swift */,
 				67D0910E22D296510034DD35 /* orderCell.swift */,
+				67662B6022D3827000775399 /* OffersCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				67B5E16A22D174D7000E939D /* getDetailesByItemId.swift */,
 				67B5E16B22D174D7000E939D /* resulteModel.swift */,
 				675364A922D22FE300F3E403 /* AddToCartModel.swift */,
+				677EA60C22D3CFCF008E9C8C /* offerModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				67D0910D22D296050034DD35 /* orders.swift in Sources */,
 				67B5E17722D174D7000E939D /* searchResults.swift in Sources */,
 				67B5E17422D174D7000E939D /* resulteModel.swift in Sources */,
+				67662B6122D3827000775399 /* OffersCell.swift in Sources */,
 				67B5E17522D174D7000E939D /* getDetailsByItemIdVC.swift in Sources */,
 				67B5E17322D174D7000E939D /* getDetailesByItemId.swift in Sources */,
 				67D0910F22D296510034DD35 /* orderCell.swift in Sources */,
@@ -297,6 +304,7 @@
 				67B5E17622D174D7000E939D /* search.swift in Sources */,
 				67B5E17122D174D7000E939D /* resultCell.swift in Sources */,
 				675364AA22D22FE400F3E403 /* AddToCartModel.swift in Sources */,
+				677EA60D22D3CFCF008E9C8C /* offerModel.swift in Sources */,
 				67B5E15322D17435000E939D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

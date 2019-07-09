@@ -152,9 +152,9 @@ class getDetailsByItemIdVC: UIViewController {
                         }
                         
                     }
-                    if let photoes = self.data.gallery{
-                       
-                    }
+//                    if let photoes = self.data.gallery{
+//                       
+//                    }
                     
                     if let smallprice = self.data.small_size_price {
                         self.price.text = "OMR \(smallprice)"

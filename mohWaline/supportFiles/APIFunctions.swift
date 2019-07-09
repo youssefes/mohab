@@ -20,7 +20,7 @@ class API{
                 let result = try JSONDecoder().decode(results.self, from: respond.data!)
                
                 let datares = result.data
-                print(datares)
+                
                 complation(true,result.msg,datares)
             }
             catch{
@@ -105,4 +105,60 @@ class API{
         }
         
     }
+    
+    
+    class func getOffers(lan : String , complation : @escaping (_ status : Bool, _ msg : String?, _ dataReturn : [offerData]?)->Void){
+        
+        let Url = "http://www.elwalima.com/elwalima_beta/api/getOffers?lang=\(lan)"
+        
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+            do{
+                
+                let result = try JSONDecoder().decode(offer.self, from: respond.data!)
+                
+                let datares = result.data
+                if let msg = result.msg {
+                    complation(true,msg, datares)
+                }else{
+                    complation(false,nil,nil)
+                }
+                
+            }
+            catch{
+                print(error.localizedDescription)
+                complation(false,nil,nil)
+            }
+        }
+        
+    }
+    
+    
+    
+    class func Booking(user_id : Int , lan : String , token :String, ball_room_id : Int, no_guest: Int, complation : @escaping (_ status : Bool, _ msg : String?, _ dataReturn : bookingData?)->Void){
+        
+        let Url = "http://www.elwalima.com/elwalima_beta/api/bookballroom?user_id=\(user_id)&ball_room_id=\(ball_room_id)&no_guest=\(no_guest)&token=\(token)&lang=\(lan)"
+        
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+            do{
+                
+                let result = try JSONDecoder().decode(Bokking.self, from: respond.data!)
+                
+                let datares = result.data
+                if let msg = result.msg {
+                    complation(true,msg, datares)
+                }else{
+                    complation(false,nil,nil)
+                }
+                
+            }
+            catch{
+                print(error.localizedDescription)
+                complation(false,nil,nil)
+            }
+        }
+        
+    }
+    
 }
