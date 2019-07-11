@@ -26,6 +26,7 @@
 		67B5E17722D174D7000E939D /* searchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5E16F22D174D7000E939D /* searchResults.swift */; };
 		67D0910D22D296050034DD35 /* orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0910C22D296050034DD35 /* orders.swift */; };
 		67D0910F22D296510034DD35 /* orderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0910E22D296510034DD35 /* orderCell.swift */; };
+		67DCDA7122D75190009262D8 /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DCDA7022D75190009262D8 /* OrderDetailsModel.swift */; };
 		B6CD891D1D3BDE6EC52BAE8D /* Pods_mohWaline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC67D1005F942BF93C80AB /* Pods_mohWaline.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		67B5E16F22D174D7000E939D /* searchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchResults.swift; sourceTree = "<group>"; };
 		67D0910C22D296050034DD35 /* orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orders.swift; sourceTree = "<group>"; };
 		67D0910E22D296510034DD35 /* orderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCell.swift; sourceTree = "<group>"; };
+		67DCDA7022D75190009262D8 /* OrderDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
 		F713844CB0C127F775BAE4B6 /* Pods-mohWaline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mohWaline.debug.xcconfig"; path = "Target Support Files/Pods-mohWaline/Pods-mohWaline.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				67B5E16B22D174D7000E939D /* resulteModel.swift */,
 				675364A922D22FE300F3E403 /* AddToCartModel.swift */,
 				677EA60C22D3CFCF008E9C8C /* offerModel.swift */,
+				67DCDA7022D75190009262D8 /* OrderDetailsModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				67B5E15522D17435000E939D /* ViewController.swift in Sources */,
 				67611CC122D20374006D3C74 /* extention.swift in Sources */,
+				67DCDA7122D75190009262D8 /* OrderDetailsModel.swift in Sources */,
 				67B5E17222D174D7000E939D /* sliderCell.swift in Sources */,
 				67D0910D22D296050034DD35 /* orders.swift in Sources */,
 				67B5E17722D174D7000E939D /* searchResults.swift in Sources */,

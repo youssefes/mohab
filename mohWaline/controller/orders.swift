@@ -10,37 +10,59 @@ import UIKit
 
 class orders: UIViewController {
 
+    var orderArray = [orderData]()
+    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly93d3cuZWx3YWxpbWEuY29tL2Vsd2FsaW1hX2JldGEvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNTYyNTA2NjU2LCJleHAiOjM2MDAwMDAwMDE1NjI1MDY2NTYsIm5iZiI6MTU2MjUwNjY1NiwianRpIjoiakdKUGhiUUJUQlJNbk1jMyJ9.jzo1OhFXfrWLdiq6Bbo2XIzT-6FCvMEXEciJx_gP_gI"
+    
     @IBOutlet weak var tableOrder: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableOrder.delegate = self
         tableOrder.dataSource = self
-        // Do any additional setup after loading the view.
+        tableOrder.tableFooterView = UIView()
+        tableOrder.separatorInset = .zero
+        tableOrder.contentInset = .zero
+        getOrderData()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getOrderData(){
+        API.OrderDetails(token: token, len: "en") { (status, msg, orderData) in
+            if status{
+                if let message = msg{
+                    print(message)
+                    if let dataReturn = orderData{
+                        self.orderArray = dataReturn
+                        self.tableOrder.reloadData()
+                    }
+                }
+            }
+        }
     }
-    */
-
 }
 
 extension orders : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return orderArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ordercell", for: indexPath)
+        if  let cell = tableView.dequeueReusableCell(withIdentifier: "ordercell", for: indexPath) as? orderCell{
+            if let id = orderArray[indexPath.row].id{
+                 cell.orderId.text = "orderId-\(id)"
+            }
+           
+            cell.orderDate.text = orderArray[indexPath.row].created_at
+            
+            cell.status.text = orderArray[indexPath.row].status
+            return cell
+        }else{
+            return UITableViewCell()
+        }
         
-        return cell
+       
+        
+        
     }
     
     

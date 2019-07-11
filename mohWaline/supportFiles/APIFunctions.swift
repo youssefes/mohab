@@ -160,5 +160,28 @@ class API{
         }
         
     }
+
+        class func OrderDetails(token: String, len : String, complation: @escaping(_ status: Bool, _ masg: String?, _ result: [orderData]?)->Void){
+            
+            let Url = "http://www.elwalima.com/elwalima_beta/api/getMyOrders?token=\(token)&lang=\(len)"
+            
+            Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+                do{
+                  
+                    let result = try JSONDecoder().decode(order.self, from: respond.data!)
+                    
+                    let datares = result.data
+                    
+                    complation(true,result.msg,datares)
+                }
+                catch{
+                    print(error.localizedDescription)
+                    complation(false,nil,nil)
+                }
+            }
+            
+        }
+        
+    
     
 }
